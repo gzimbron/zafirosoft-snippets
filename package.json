@@ -1,0 +1,37 @@
+{
+	"name": "zafirosoft-snippets",
+	"displayName": "zafirosoft-snippets",
+	"description": "Colección de snipets de zafirosoft",
+	"version": "0.0.1",
+	"author": {
+		"name": "Gustavo Zimbrón",
+		"email": "gzimbron@zafirosoft.com"
+	},
+	"icon": "zafirosoft.jpg",
+	"engines": {
+		"vscode": "^1"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "'javascript','typescript'",
+				"path": "./snippets/general.code-snippets"
+			},
+			{
+				"language": "'javascript','typescript'",
+				"path": "./snippets/js-ts.code-snippets"
+			},
+			{
+				"language": "'svelte'",
+				"path": "./snippets/svelte.code-snippets"
+			},
+			{
+				"language": "'javascript','typescript','svelte'",
+				"path": "./snippets/zerpweb2.0-api.code-snippets"
+			}
+		]
+	}
+}

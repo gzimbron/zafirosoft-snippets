@@ -1,0 +1,59 @@
+{
+	"Zafiro Svelte Component": {
+		"scope": "svelte,javascript,typescript",
+		"prefix": "import-zafiro-svelte-component",
+		"body": ["\timport { $1 } from '@zafirosoft/svelte-components';"],
+		"description": "Import Zafiro Svelte Component"
+	},
+	"Import $t": {
+		"scope": "svelte,typescript,javascript",
+		"prefix": "import-t",
+		"body": ["import { t } from 'svelte-intl-precompile';"],
+		"description": "Agrega un import de $t."
+	},
+	"Svelte dispatch TS": {
+		"scope": "svelte,typescript",
+		"prefix": "s-dispatch",
+		"body": [
+			"type ComponentEventsList = {",
+			"\t${1:eventName}: ${2:eventReturnType};",
+			"};",
+			"const dispatch = createEventDispatcher<ComponentEventsList>();"
+		],
+		"description": "Agrega una constante dispatch con createEventDispatcher()."
+	},
+	"Svelte dispatch JS": {
+		"scope": "svelte,javascript",
+		"prefix": "s-dispatch",
+		"body": ["const dispatch = createEventDispatcher();"],
+		"description": "Agrega una constante dispatch con createEventDispatcher()."
+	},
+	"Export let variable": {
+		"scope": "svelte,javascript,typescript",
+		"prefix": "explet",
+		"body": ["export let $1 = $2;"],
+		"description": "Export let varable rapidamente."
+	},
+	"Svelte Component": {
+		"prefix": "kitComp",
+		"scope": "svelte, markdown",
+		"description": "Scaffold a TypeScript Svelte component",
+		"body": [
+			"<script${1: lang=\"ts\"}>",
+			"\t$4",
+			"</script>",
+			"",
+			"$3",
+			"",
+			"<style${2: lang=\"postcss\"}>",
+			"",
+			"</style>"
+		]
+	},
+	"Svelte Key Block": {
+		"prefix": "kitKey",
+		"scope": "svelte, markdown",
+		"description": "Create a Svelte #key block",
+		"body": ["{#key ${1:expression} }", "\t", "{/key}"]
+	}
+}

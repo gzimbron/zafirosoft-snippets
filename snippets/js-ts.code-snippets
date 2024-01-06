@@ -1,0 +1,83 @@
+{
+	/**
+	 * Zafiro Components
+	 */
+	"Zafiro Registry": {
+		"scope": "",
+		"prefix": "npmrc-zafirosoft",
+		"body": [
+			"@zafirosoft:registry=https://gitlab.com/api/v4/packages/npm/",
+			"//gitlab.com:_authToken=\\${GITLAB_PACKAGE_READ_TOKEN}"
+		],
+		"description": "Zafiro Registry"
+	},
+	"log": {
+		"scope": "javascript,typescript",
+		"prefix": "clog",
+		"body": ["console.log($1);", "$2"],
+		"description": "Log output to console.error"
+	},
+	"logerr": {
+		"scope": "javascript,typescript",
+		"prefix": "clogerr",
+		"body": ["console.error($1);", "$2"],
+		"description": "Log output to console.error"
+	},
+	"logtable": {
+		"scope": "javascript,typescript",
+		"prefix": "clogtable",
+		"body": ["console.table($1);", "$2"],
+		"description": "Log output to constole.table"
+	},
+	"Arrow function": {
+		"scope": "javascript,typescript",
+		"prefix": "afun",
+		"body": ["const ${1:name} = (${2:parametros}) => {", "\t$3", "}", "$4"],
+		"description": "Arrow function"
+	},
+	"Async Arrow function": {
+		"scope": "javascript,typescript",
+		"prefix": "aafun",
+		"body": ["const ${1:name} = async (${2:parametros}) => {", "\t$3", "}", "$4"],
+		"description": "Async Arrow function"
+	},
+	"export default function": {
+		"scope": "javascript,typescript",
+		"prefix": "edfunc",
+		"body": ["export default function $1($2) {", "\t$3", "}"],
+		"description": "Export default function"
+	},
+	"export default class": {
+		"scope": "javascript,typescript",
+		"prefix": "edclass",
+		"body": ["export default class $1 {", "\t$2", "}"],
+		"description": "Export default class"
+	},
+	/**
+	 * Cucumber
+	 */
+	"Cucumber Before": {
+		"scope": "javascript,typescript",
+		"prefix": "cu-before",
+		"body": ["Before(async function () {", "\t$1", "});"],
+		"description": "Escribe un Before de cucumber"
+	},
+	"Cucumber Given": {
+		"scope": "javascript,typescript",
+		"prefix": "cu-given",
+		"body": ["Given('$1', async function () {", "\t$2", "});"],
+		"description": "Escribe un Given de cucumber"
+	},
+	"Cucumber When": {
+		"scope": "javascript,typescript",
+		"prefix": "cu-when",
+		"body": ["When('$1', async function () {", "\t$2", "});"],
+		"description": "Escribe un When de cucumber"
+	},
+	"Cucumber Then": {
+		"scope": "javascript,typescript",
+		"prefix": "cu-then",
+		"body": ["Then('$1', async function () {", "\t$2", "});"],
+		"description": "Escribe un Then de cucumber"
+	}
+}
