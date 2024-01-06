@@ -5,11 +5,15 @@
 	"version": "0.0.1",
 	"author": {
 		"name": "Gustavo Zimbrón",
-		"email": "gzimbron@zafirosoft.com"
+		"email": "pptavozl@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gzimbron/zafirosoft-snippets"
 	},
 	"icon": "zafirosoft.jpg",
 	"engines": {
-		"vscode": "^1"
+		"vscode": "^1.0.0"
 	},
 	"categories": [
 		"Snippets"
