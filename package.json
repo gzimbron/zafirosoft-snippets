@@ -17,20 +17,32 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "'javascript','typescript'",
-				"path": "./snippets/general.code-snippets"
-			},
-			{
-				"language": "'javascript','typescript'",
+				"language": "javascript",
 				"path": "./snippets/js-ts.code-snippets"
 			},
 			{
-				"language": "'svelte'",
+				"language": "typescript",
+				"path": "./snippets/js-ts.code-snippets"
+			},
+			{
+				"language": "svelte",
 				"path": "./snippets/svelte.code-snippets"
 			},
 			{
-				"language": "'javascript','typescript','svelte'",
-				"path": "./snippets/zerpweb2.0-api.code-snippets"
+				"language": "javascript",
+				"path": "./snippets/general.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/general.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/zerpweb2.0.code-snippets"
+			},
+			{
+				"language": "svelte",
+				"path": "./snippets/zerpweb2.0.code-snippets"
 			}
 		]
 	}
