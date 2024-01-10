@@ -2,7 +2,7 @@
 	"name": "zafirosoft-snippets",
 	"displayName": "zafirosoft-snippets",
 	"description": "Colección de snipets de zafirosoft",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "ZimbronApps",
 	"author": {
 		"name": "Gustavo Zimbrón",
@@ -31,6 +31,14 @@
 			},
 			{
 				"language": "svelte",
+				"path": "./snippets/svelte.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/svelte.code-snippets"
+			},
+			{
+				"language": "typescript",
 				"path": "./snippets/svelte.code-snippets"
 			},
 			{
